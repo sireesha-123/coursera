@@ -1,211 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Food LLC</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Food, LLC</title>
+	<link rel="stylesheet" href="/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=lora' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 <style>
-	body {
-	font-size: 15px;
-	color: #fff;
+	*{
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
 	background-color: #61122f;
+	color: #fff;
+	font-size: 16px;
 	font-family: 'Oxygen', sans-serif;
 }
-/** HEADER **/
-h1 {
-	margin-bottom: 15px;
-	text-align: left;
-}
-#header-nav {
+
+#header-nav{
 	background-color: #f6b319;
 	border-radius: 0;
 	border: 0;
 }
-.navbar-brand {
-	padding-top: 25px;
+.navbar-default .navbar-brand{
+	font-size: 2em;
+	color: #ffffff;
 }
 
-.navbar-brand h1 {/* name */
-    font-family: 'Lora', serif;
-    color: #557c3e;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-    vertical-align: middle;
+.navbar-default .navbar-collapse{
+	border: none;
 }
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-	border: 1px solid #61122f;
+#nav-list a:active{
+	/*border-top: none;*/
+	border: none; 
+	border-width: 0px;
 }
-.navbar-header button.navbar-toggle {
-	clear: both;
-	margin-top: -30px;
-}
-.navbar-toggle {
-	position: relative;
-	float: right;
-	padding: 9px 10px;
-	margin-top: 8px;
-	margin-right: 15px;
-	margin-bottom: 8px;
-	background-color: transparent;
-	background-image: none;
-	border: 1px solid transparent;
-	border-radius: 4px;
-}
-.navbar-toggle: focus {
-	outline: 0;
-}
-.navbar-toggle .icon-bar {
-	display: block;
-	width: 22px;
-	height: 2px;
-	border-radius: 1px;
-}
-.navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 4px;
-}
-@media (min-width: 768px) {
-	.navbar-toggle {
-		display: none;
-	}
-}
-.navbar-nav {
-	margin: 7.5px -15px;
-}
-.navbar-nav > li > a {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	line-height: 20px;
-}
-
-/********* Base styles ***********/
-* {
-	box-sizing: border-box;
+#nav-list a{
 	text-align: center;
-}	
-
-p {
-	position: relative;
-	border: 1px solid black;
-	background-color: #A52A2A;
-	width: 900px;
-	height: 150px;
-	margin-right: auto;
-	margin-left: auto;
-	font-family: Helvetica;
-	color: white;
-	align-content: center;
 }
+
+#nav-list a:hover{
+	background: #e7e7e7;
+}
+.glyphicon{
+	margin-right: 5px;	
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 2px solid #61122f;
+	background: #ffffff;
+}
+
+.section-background-color{
+	background-color: #f29c54;
+	/*padding: 5px;*/
+} 
 /* Our Menu. */
 .row {
 	width: 100%;
 	text-align: center;
 }
-h2 {
-	margin-bottom: 15px;
+#chicken{
+	margin-right: 10px;
 	text-align: center;
 }
-#menu {
-	width: 280px;
-	margin: 0 auto 15px;
-}
-.menu-item-description {
+#beef{
+	margin-right: 10px;
 	text-align: center;
 }
-.col-xxs-12 {
-		position: relative;
-		min-height: 1px;
-		padding-right: 15px;
-		padding-left: 15px;
-		float: left;
-		width: 100%;
+
+/*** Large devices only ***/
+@media (min-width: 1200px) {
+	.col-lg-4{
+		width: 32.33333%;
 	}
+}
+
+/*** Medium devices only ***/
+@media (min-width: 767px) and (max-width: 1199px) {
+	#chicken{
+		margin-right: 4%;
+	}
+	#beef{
+		margin-right: 0px;
+	}
+
+	#sushi{
+		margin-top: 10px;
+	}
+	.col-md-6{
+		width: 48%;
+	}
+	.internal-link{
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+	 a:hover{
+	 	color: white;
+	}
+}
+
+/*** Small devices only ***/
+@media (max-width: 767px) {
+	h1{
+		margin-left: 25px;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	#company-name{
+		font-size: 2em;
+		color: white;
+	}
+	.navbar-default .navbar-collapse{
+		border: none;
+		background-color: #99C5B5;
+	}
+	/*.col-md-6, .col-lg-4{
+		width: 100%;
+		margin-top: 10px;
+	}*/
+
+	#beef{
+		margin: 10px 0px;
+	}
+	.internal-link{
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+	 a:hover{
+	 	color: white;
+	}
+} /*end media query*/
 </style>
 </head>
 <body>
 	<header>
-	<nav id="header-nav" class="navbar navbar-default">
-	<div class="container">
-	<div class="navbar-header">
-		<a href="mod3.html" class="pull-left visible-md visible-lg"></a>
-		<div class="navbar-brand">
-			<a href="mod3.html"><h1>Food LLC</h1></a>
-    </div>
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-	</div>
-	<div id="collapsable-nav" class="collapse navbar-collapse">
-		<ul id="nav-list" class="nav navbar-nav navbar-right">
-			<li>
-				<a href="mod3.html">
-					<span class="glyphon glyphicon-cutlery"></span><br class="hidden-xs">Chicken</a>
-			</li>
-			<li>
-				<a href="#">
-					<span class="glyphicon glyphicon-info-sign"></span><br clear="hidden-xs">Beef</a>
-			</li>
-			<li>
-				<a href="#">
-					<span class="glyphicon glyphicon-certificate"></span>
-					<br clear="hidden-xs">Sushi</a>
-			</li>
-	</div>
-	</nav>     
-</header>
- <h2>Our Menu</h2>
- <div>
-	<div class="col-lg-3 col-md-6 col-sm-12">
-	<div class='menu'>
-	<div class='menu-title' id="chicken"><p>Chicken<br>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsumdolores vel 
-	modi magnam veniam alias atnam. Voluptatem officiis dolor dolorem aspernatur dolorum modi 
-    ipsa, nobis animi aut! Eligendi nemo ipsumdolores vel 
-	modi magnam veniam alias atnam. Voluptatem officiis dolor dolorem aspernatur dolorum modi 
-    ipsa, nobis animi aut! Eligendi nemo ipsumdolores vel 
-	modi magnam veniam alias atnam. Voluptatem officiis dolor dolorem aspernatur dolorum modi 
-    ipsa, nobis animi aut!</p></div>
-  </div>
-    </div>
-	<div class="col-lg-3 col-md-6 col-sm-12">
-	<div class='menu'>
-	<div class='menu-title' id="Beef"><p>Beef<br>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel 
-	modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi 
-	ipsa, nobis animi aut! Eligendi nemo ipsumdolores vel modi magnam veniam alias atnam. 
-	Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut! Eligendi 
-	nemo ipsumdolores vel modi magnam veniam alias atnam. Voluptatem officiis dolor dolorem 
-	aspernatur dolorum modi ipsa, nobis animi aut!</p></div>
-    </div>
-    </div>
-	<div class="col-lg-3 col-md-6 col-sm-12">
-	<div class='menu'>
-	<div class='menu-title' id="Sushi"><p>Sushi<br>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel 
-	modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi 
-	ipsa, nobis animi aut! Eligendi nemo ipsumdolores vel modi magnam veniam alias atnam. 
-	Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut! Eligendi 
-	nemo ipsumdolores vel modi magnam veniam alias atnam. Voluptatem officiis dolor dolorem 
-	aspernatur dolorum modi ipsa, nobis animi aut!</p></div>
-    </div>
-    </div>
-</div>
-   <!-- jquery (Bootstrap JS plugins depend on it) -->
-   <script src="js/jquery-1.11.3.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/script.js"></script>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+				<h1 id="company-name"class="navbar-brand">Food, LLC</h1>
+					<!-- <div class="navbar-brand pull-left">
+						<h1>Food, LLC</h1>
+					</div> -->	
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+      				</button>
+				</div> <!-- NavBar Header -->
 
+                  
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right hidden visible-xs">
+						<li>
+							<a href="#chicken">
+							<!-- <span class="glyphicons glyphicons-fast-food"></span> -->
+								<span class="glyphicon glyphicon-cutlery"></span>
+								<!-- <br class="hidden-xs"> -->
+								Chicken
+							</a>
+						</li>
+						<li>
+							<a href="#beef">
+								<span class="glyphicon glyphicon-cutlery"></span>
+								<br class="hidden-xs">
+								Beef
+							</a>
+						</li>
+						<li>
+							<a href="#sushi">
+								<span class="glyphicon glyphicon-cutlery"></span>
+								<br class="hidden-xs">
+								Sushi
+							</a>
+						</li>
+					</ul>
+				</div> <!-- .collapse .navbar-collapse -->
+			 </div> <!-- Container -->
+		</nav>
+	</header>
+
+			<div id="main-content" class="container">
+				<div class="row">
+					<h2 id="top" class="text-center">Our Menu</h2>
+
+						<div id="chicken" class="col-lg-4 col-md-6 col-xs-12 col-sm-12 section-background-color">
+							<h3 class="text-center">Chicken</h3>
+							<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.</p>
+						</div>
+
+					<div id="beef" class="col-lg-4 col-md-6 col-xs-12 col-sm-12 section-background-color">
+						<h3 class="text-center">Beef</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.</p>	
+					</div>	
+
+					<div id="sushi" class="col-lg-4 col-md-12 col-xs-12 col-sm-12 section-background-color">
+						<h3 class="text-center">Sushi</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.Molestiae, voluptate, necessitatibus? Corporis dolorum explicabo debitis, magnam deleniti eum porro iste praesentium maxime aperiam earum quasi obcaecati dignissimos libero, ipsum saepe.</p>
+					</div>	
+					<a href="#top" class="visible-xs visible-md visible-sm text-center internal-link">Back to top</a>
+				</div>
+			 </div> <!-- end main-content -->
+
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="/css/bootstrap-3.3.7-dist/js/jquery-3.2.0.min.js"></script>
+	<script src="/css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="/css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </body>
-</html>
+</html> 
