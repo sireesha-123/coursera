@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Module 4 solution</title>
+	<script>
+		var names = []; // DO NOT REMOVE
+	</script>
+	<script src="js/SpeakHello.js"></script>
+	<script>
+		(function (window) {
+  var helloSpeaker = {};
+  var speakWord = "Hello";
+  helloSpeaker.speak = function (name) {
+	console.log(speakWord + " " + name);
+  }
+
+  window.helloSpeaker = helloSpeaker;
+
+})(window);
+	</script>
+	<script src="js/SpeakGoodBye.js"></script>
+	<script>
+		(function (window) {
+  var byeSpeaker = {};
+  var speakWord = "Good Bye";
+  byeSpeaker.speak = function (name) {
+	console.log(speakWord + " " + name);
+  }
+
+  window.byeSpeaker = byeSpeaker;
+
+})(window);
+	</script>
+	<script src="js/script.js"></script>
+	<script>
+		(function (window) {
+	var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+	for (var i in names) {
+		var firstLetter = ((names[i]).charAt(0)).toLowerCase();
+  if (firstLetter == 'j') {
+     window.byeSpeaker.speak(names[i]);
+  } else {
+     window.helloSpeaker.speak(names[i]);
+  }
+}
+})(window);
+	</script>
+</head>
+<body>
+  <h1>Module 4 solution</h1>
+
+  <h2>Inspect the page and checkout the Console in the Developer Tools.</h2>
+</body>
+</html>
